@@ -1,5 +1,5 @@
 const fs = require("fs");
-const Shop = require("../models/shop");
+const { Shop } = require("../models/shop");
 const connectionDB = require("./mongo");
 
 const file = "./app/src/database/data.json";

@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const connectionDB = require("./database/mongo");
-//const { routes } = require("./routes");
+const routes = require("./routes/routes");
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
-//routes(app);
+routes(app);
 
 connectionDB()
   .then(() => {
