@@ -4,18 +4,30 @@ const Schema = mongoose.Schema;
 
 const OrderSchema = new Schema(
   {
-    _id: {
-      type: Schema.Types.ObjectId,
-    },
-    user_id: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
+    user: {
+      name: {
+        type: String,
+        required: [true, "Missing required 'name' field"],
+        trim: true,
+      },
+      email: {
+        type: String,
+        required: [true, "Missing required 'email' field"],
+        trim: true,
+      },
+      phone: {
+        type: String,
+        required: [true, "Missing required 'phone' field"],
+        trim: true,
+      },
+      adress: {
+        type: String,
+        required: [true, "Missing required 'adress' field"],
+        trim: true,
+      },
     },
     products: [
       {
-        _id: {
-          type: Schema.Types.ObjectId,
-        },
         price: {
           type: Number,
           required: [true, "Missing required 'price' field"],
