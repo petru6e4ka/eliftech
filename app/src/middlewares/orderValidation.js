@@ -26,6 +26,7 @@ const productValidation = () => {
     body("products.*.price").notEmpty().isNumeric(),
     body("products.*.title").notEmpty(),
     body("products.*.imageUrl").notEmpty(),
+    body("products.*.quantity").notEmpty().isNumeric({ min: 1 }),
     errorCollecting,
   ];
 };

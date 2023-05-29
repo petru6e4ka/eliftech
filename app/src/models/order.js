@@ -42,6 +42,10 @@ const OrderSchema = new Schema(
           required: [true, "Missing required 'imageUrl' field"],
           trim: true,
         },
+        quantity: {
+          type: Number,
+          required: [true, "Missing required 'quantity' field"],
+        },
       },
     ],
     shop_id: {
