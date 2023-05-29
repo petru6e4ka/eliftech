@@ -17,12 +17,12 @@ const getAllShops = async (_, res) => {
   }
 };
 
-const getOneShop = async (req, res) => {
+const getOneShopProducts = async (req, res) => {
   try {
     const shop = await Shop.findById(req.params.shopId);
 
     if (shop) {
-      res.json(shop);
+      res.json(shop.products);
     }
 
     res.status(404).end();
@@ -31,4 +31,4 @@ const getOneShop = async (req, res) => {
   }
 };
 
-module.exports = { getAllShops, getOneShop };
+module.exports = { getAllShops, getOneShopProducts };
