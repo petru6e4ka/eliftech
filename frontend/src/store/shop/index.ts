@@ -39,21 +39,21 @@ const shopsSlice = createSlice({
         state.entities = action.payload;
       })
       .addMatcher(
-        (action) => action.type.endsWith("/pending"),
+        (action) => action.type.endsWith("shops/load/pending"),
         (state) => {
           state.loading = true;
           state.error = "";
         }
       )
       .addMatcher(
-        (action) => action.type.endsWith("/rejected"),
+        (action) => action.type.endsWith("shops/load/rejected"),
         (state, action) => {
           state.loading = false;
           state.error = action.payload || action.error.message;
         }
       )
       .addMatcher(
-        (action) => action.type.endsWith("/fulfilled"),
+        (action) => action.type.endsWith("shops/load/fulfilled"),
         (state) => {
           state.loading = false;
           state.error = "";
@@ -64,4 +64,4 @@ const shopsSlice = createSlice({
 
 export const shopsReducer = shopsSlice.reducer;
 export const useShopsSelector = () =>
-  useSelector((state: { shops: IShop[] }) => state.shops);
+  useSelector((state: { shops: IInitialState }) => state.shops);

@@ -1,3 +1,4 @@
+import { FC } from "react";
 import {
   Card,
   CardMedia,
@@ -6,21 +7,23 @@ import {
   Typography,
   Button,
 } from "../atoms";
+import { IProduct } from "../../constants/types";
 
-export const ProductCard = () => {
+export const ProductCard: FC<IProduct> = ({ title, price, imageUrl }) => {
   return (
     <Card sx={{ maxWidth: 300 }} component="article">
       <CardMedia
         sx={{ height: 140 }}
-        image="https://sushiicons.com.ua/image/cache/catalog/New_Roll/New_sets/salmon_set-300x300.webp"
-        title="sushi"
+        image={imageUrl}
+        title={title}
+        component="img"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="h3">
-          Lizard
+          {title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Price: 100 $
+          {`Price: ${price} UAH`}
         </Typography>
       </CardContent>
       <CardActions>

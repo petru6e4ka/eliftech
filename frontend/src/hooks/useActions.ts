@@ -6,12 +6,14 @@ import {
   setUserPhone,
   setUserAdress,
 } from "../store/user";
+import { setShopId } from "../store/products";
 
 const actions = {
   setUserName,
   setUserEmail,
   setUserPhone,
   setUserAdress,
+  setShopId,
 };
 
 export const useActions = () => {

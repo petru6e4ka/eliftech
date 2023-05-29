@@ -16,10 +16,12 @@ import { combineReducers } from "redux";
 import { service } from "../service";
 import { userReducer } from "./user";
 import { shopsReducer } from "./shop";
+import { productsReducer } from "./products";
 
 const rootReducer = combineReducers({
   user: userReducer,
   shops: shopsReducer,
+  products: productsReducer,
 });
 
 const persistConfig = {
