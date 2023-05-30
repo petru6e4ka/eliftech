@@ -1,13 +1,1 @@
-# To run this project locally:
-
-- Run
-
-### `npm start`
-
-from root directory
-
-- Run
-
-### `npm start`
-
-from frontend directory
+# You can see this project [here](https://petru6e4ka.github.io/eliftech/).
