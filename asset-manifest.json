@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/eliftech/static/css/main.a6a067de.css",
+    "main.js": "/eliftech/static/js/main.c3eac492.js",
+    "index.html": "/eliftech/index.html",
+    "main.a6a067de.css.map": "/eliftech/static/css/main.a6a067de.css.map",
+    "main.c3eac492.js.map": "/eliftech/static/js/main.c3eac492.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6a067de.css",
+    "static/js/main.c3eac492.js"
+  ]
+}
