@@ -7,7 +7,7 @@ export interface IError {
   text: string;
 }
 
-const _fetch = async <Req>({
+const _fetch = async <B>({
   url = "",
   baseUrl = API_URL,
   body,
@@ -16,7 +16,7 @@ const _fetch = async <Req>({
 }: {
   url: string;
   baseUrl?: string;
-  body?: Req;
+  body?: B;
   headers?: Record<string, string>;
   method?: TMethod;
 }) => {
@@ -41,5 +41,6 @@ const _fetch = async <Req>({
 };
 
 const get = (url: string) => _fetch({ url });
+const post = <B>(url: string, body: B) => _fetch({ url, body, method: "POST" });
 
-export { get };
+export { get, post };

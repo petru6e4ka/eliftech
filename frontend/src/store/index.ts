@@ -17,17 +17,19 @@ import { service } from "../service";
 import { userReducer } from "./user";
 import { shopsReducer } from "./shop";
 import { productsReducer } from "./products";
+import { orderReducer } from "./order";
 
 const rootReducer = combineReducers({
   user: userReducer,
   shops: shopsReducer,
   products: productsReducer,
+  order: orderReducer,
 });
 
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["user"],
+  whitelist: ["user", "order"],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
