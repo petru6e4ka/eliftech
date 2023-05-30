@@ -18,10 +18,15 @@ export {
   CardActions,
   TextField,
   CircularProgress,
+  Modal as UIModal,
+  Fade,
+  Backdrop,
+  IconButton,
 } from "@mui/material";
 
 export {
   RamenDiningOutlined,
   LocalPizzaOutlined,
   LunchDiningOutlined,
+  DeleteOutline,
 } from "@mui/icons-material";
