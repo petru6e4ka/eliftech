@@ -1,0 +1,225 @@
+[
+  {
+    "title": "Iconic Sushi",
+    "type": "asian",
+    "products": [
+      {
+        "price": 1250,
+        "title": "Salmon set",
+        "imageUrl": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/New_sets/salmon_set-300x300.webp"
+      },
+      {
+        "price": 2700,
+        "title": "Set for a big company",
+        "imageUrl": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/New_sets/big_companu-300x300.webp"
+      },
+      {
+        "price": 2150,
+        "title": "Set for four persons",
+        "imageUrl": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/New_sets/4x-300x300.webp"
+      },
+      {
+        "price": 1250,
+        "title": "Set for two persons",
+        "imageUrl": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/New_sets/2x-300x300.webp"
+      },
+      {
+        "price": 1250,
+        "title": "Set of baked rolls",
+        "imageUrl": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/New_sets/grilled-300x300.webp"
+      },
+      {
+        "price": 1270,
+        "title": "Set ONE LOVE",
+        "imageUrl": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/New_sets/one_love-300x300.webp"
+      },
+      {
+        "price": 910,
+        "title": "Set with inari",
+        "imageUrl": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/New_sets/inari-300x300.webp"
+      },
+      {
+        "price": 1620,
+        "title": "Seth Philadelphia",
+        "imageUrl": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/New_sets/phila-300x300.webp"
+      },
+      {
+        "price": 700,
+        "title": "Solo set",
+        "imageUrl": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/New_sets/solo-300x300.webp"
+      },
+      {
+        "price": 1700,
+        "title": "Set for three persons",
+        "imageUrl": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/New_sets/3x-300x300.webp"
+      },
+      {
+        "price": 1750,
+        "title": "Set ICONS",
+        "imageUrl": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/New_sets/icons-300x300.webp"
+      },
+      {
+        "price": 1850,
+        "title": "Set of dragons",
+        "imageUrl": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/New_sets/dracon-300x300.webp"
+      },
+      {
+        "price": 955,
+        "title": "Nigiri set",
+        "imageUrl": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/New_sets/nigiri-300x300.webp"
+      },
+      {
+        "price": 780,
+        "title": "Set of gunkans",
+        "imageUrl": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/New_sets/gunkan-300x300.webp"
+      }
+    ]
+  },
+  {
+    "title": "Rocci Pizza",
+    "type": "italian",
+    "products": [
+      {
+        "price": 259,
+        "title": "4 Cheese",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/4e618aa2521b616560338cb50f037fb1.jpg/0d6d40233cc565c6cd0893e954aeb991.webp"
+      },
+      {
+        "price": 239,
+        "title": "Ricco",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/95a34268e34e94b6c2c2e4bcb795941d.jpg/166ed0b1ddc643ec24ba6089cfe4cd73.webp"
+      },
+      {
+        "price": 219,
+        "title": "Bavaria",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/4468f411f35128807fcd61c5ae744271.jpg/a270ce61e18d5b7cd1e5c7d225f78c1a.webp"
+      },
+      {
+        "price": 249,
+        "title": "Barbeque",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/e5238283d0015721c51c369596e7bd59.jpg/d49e81d586e82290651fcfcee298b650.webp"
+      },
+      {
+        "price": 249,
+        "title": "Belissimo",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/%D0%91%D0%B5%D0%B7%20%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20(500%C2%A0%C3%97%20500%C2%A0%D0%BF%D0%B8%D0%BA%D1%81.)%20(5).jpg/c871fe802d8615a765ea5fd4783298a0.webp"
+      },
+      {
+        "price": 259,
+        "title": "4 Seasons",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/IMG_2687%20(7).JPG/8d76ada62e19b42dfc40eb583e6c6b4e.webp"
+      },
+      {
+        "price": 249,
+        "title": "Bingo",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/%D0%9A%D0%BE%D0%BF%D0%B8%D1%8F%20%D0%B1%D0%B8%D0%BD%D0%B3%D0%BE-30.jpg/5fa656dcecbabe8534541f41015d8119.webp"
+      },
+      {
+        "price": 249,
+        "title": "Neapolitano",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/a3516abd5c27877132eb2bbfb19ba3b4.JPG/0ebf13ceb402383354a166cdb7486d8e.webp"
+      },
+      {
+        "price": 319,
+        "title": "Mama mia",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/5c1c219a59f6f3e96944120b00eeb29c.jpg/91345607f6cf42dcde55b7d19c7be90a.webp"
+      },
+      {
+        "price": 259,
+        "title": "Carbonara",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/1b286ea4a16de1275d2e9f6544e6a276.jpg/66efff48a34915e27de66ffb6944e515.webp"
+      },
+      {
+        "price": 249,
+        "title": "Verona",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/63d47f645e0b08f6d7115e5586b25a10.jpg/bbe4a7d5c74ec7d2e788fcf3dc7bea28.webp"
+      },
+      {
+        "price": 249,
+        "title": "Bravissimo",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/23a8d167b6e0a48f6e948618045c119e.jpg/fbf76d08bfb2aad52dbe962772803d88.webp"
+      },
+      {
+        "price": 249,
+        "title": "Chili",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/7cdba0c0297bf374ef093821163e593e.JPG/565619fbb469997f681df7b43044ec70.webp"
+      },
+      {
+        "price": 219,
+        "title": "Margarita",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/%D0%9A%D0%BE%D0%BF%D0%B8%D1%8F%20%D0%BC%D0%B0%D1%80%D0%B3%D0%B0%D1%80%D0%B8%D1%82%D0%B0-30%20(1).jpg/1a6ea9345be53a12169b6b915967099c.webp"
+      },
+      {
+        "price": 249,
+        "title": "Ukrainian",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/9705679c2157ab45ebecc923b6bc54d3.jpg/1348c0e25ad29f4849331190878dea65.webp"
+      },
+      {
+        "price": 259,
+        "title": "Francheska",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/86816f06c2a43d67144c0e881766a3d3.jpg/1f85ad500117925dbd05c46e32e6aa3d.webp"
+      },
+      {
+        "price": 249,
+        "title": "Caesar",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/944116c0a146a0d7244e259540a90568.jpg/70d8b5b7fc18144d2be6bd1b68b0ee40.webp"
+      },
+      {
+        "price": 249,
+        "title": "Chelentano",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/%D0%9A%D0%BE%D0%BF%D0%B8%D1%8F%20%D1%87%D0%B5%D0%BB%D0%B5%D0%BD%D1%82%D0%B0%D0%BD%D0%BE-35.jpg/852ff6364304d1b4055ea925d38d5901.webp"
+      },
+      {
+        "price": 249,
+        "title": "chicken",
+        "imageUrl": "https://ricco.kh.ua/.cache/images/%D0%9A%D0%BE%D0%BF%D0%B8%D1%8F%20%D1%87%D0%B8%D0%BA%D0%B5%D0%BD-30.jpg/ebbf6c3ad9794a9eb16b6a3fb21204e0.webp"
+      }
+    ]
+  },
+  {
+    "title": "McDon",
+    "type": "fastfood",
+    "products": [
+      {
+        "price": 299,
+        "title": "Cheeseburger",
+        "imageUrl": "https://gdeburger.com/image/cache/catalog/13.09.2021/chizburger-cr-975x545.jpg"
+      },
+      {
+        "price": 299,
+        "title": "Gdeburger",
+        "imageUrl": "https://gdeburger.com/image/cache/catalog/13.09.2021/burger_firmennyiy-cr-975x545.jpg"
+      },
+      {
+        "price": 299,
+        "title": "4 Cheese",
+        "imageUrl": "https://gdeburger.com/image/cache/catalog/13.09.2021/burger_4_syira-cr-975x545.jpg"
+      },
+      {
+        "price": 325,
+        "title": "Duck Burger",
+        "imageUrl": "https://gdeburger.com/image/cache/catalog/13.09.2021/bugrer_s_utkoy_konfi-cr-975x545.jpg"
+      },
+      {
+        "price": 315,
+        "title": "Bacon Jam Burger",
+        "imageUrl": "https://gdeburger.com/image/cache/catalog/13.09.2021/burger_kambatsola-cr-975x545.jpg"
+      },
+      {
+        "price": 240,
+        "title": "Kids Burger",
+        "imageUrl": "https://gdeburger.com/image/cache/catalog/13.09.2021/burger_kids-cr-975x545.jpg"
+      },
+      {
+        "price": 315,
+        "title": "Alaska",
+        "imageUrl": "https://gdeburger.com/image/cache/catalog/13.09.2021/burger_Alyaska-cr-975x545.jpg"
+      },
+      {
+        "price": 459,
+        "title": "Future Burger",
+        "imageUrl": "https://gdeburger.com/image/cache/catalog/13.09.2021/burger_s_buduschego-cr-975x545.jpg"
+      }
+    ]
+  }
+]
