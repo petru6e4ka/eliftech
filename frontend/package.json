@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://petru6e4ka.github.io/eliftech/",
+  "homepage": "https://delivery-f-service.onrender.com/",
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
@@ -28,8 +28,6 @@
     "yup": "^1.2.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -56,7 +54,6 @@
   "devDependencies": {
     "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.26",
-    "@types/yup": "^0.32.0",
-    "gh-pages": "^5.0.0"
+    "@types/yup": "^0.32.0"
   }
 }
