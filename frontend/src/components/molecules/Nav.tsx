@@ -1,17 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Button, Divider, Box, Badge } from "../atoms";
+import { Button, Divider, Badge, Stack } from "../atoms";
 import { useOrderSelector } from "../../store/order";
 
 export const Nav = () => {
   const { products } = useOrderSelector();
   return (
-    <Box
-      sx={{
-        display: "flex",
-        alignItems: "center",
-        width: "fit-content",
-      }}
+    <Stack
+      direction="row"
+      alignItems="center"
+      sx={{ width: "fit-content" }}
       component={"nav"}
     >
       <NavLink to="/">
@@ -33,7 +31,7 @@ export const Nav = () => {
           <Button variant="text">Shopping Cart</Button>
         )}
       </NavLink>
-    </Box>
+    </Stack>
   );
 };
 

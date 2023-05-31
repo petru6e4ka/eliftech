@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { Header } from "../organisms";
-import { Box, Grid } from "../atoms";
+import { Box, Grid, Stack } from "../atoms";
 
 export const AsideWith: FC<Props> = ({ children }) => {
   const [aside, ...content] = children;
@@ -13,17 +13,15 @@ export const AsideWith: FC<Props> = ({ children }) => {
         <Grid item xs={12} component="main">
           <Grid container item spacing={2}>
             <Grid item xs="auto" component="aside">
-              <Box
+              <Stack
+                alignItems="center"
                 sx={{
                   px: 4,
                   pb: 2,
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
                 }}
               >
                 {aside}
-              </Box>
+              </Stack>
             </Grid>
             <Grid item xs component="section">
               {content}

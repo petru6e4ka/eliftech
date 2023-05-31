@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { AsideWith } from "../../components/templates";
 import { CartForm, CartItem } from "../../components/organisms";
-import { Box, Typography, Button } from "../../components/atoms";
+import { Typography, Button, Stack } from "../../components/atoms";
 import { useAppDispatch } from "../../store";
 import { createOrder } from "../../store/order";
 import { useOrderSelector } from "../../store/order";
@@ -28,7 +28,7 @@ export const ShoppingCart = () => {
   return (
     <AsideWith>
       <CartForm />
-      <Box sx={{ px: 3 }}>
+      <Stack sx={{ px: 3 }}>
         {products.length > 0 &&
           products.map((product) => (
             <CartItem
@@ -39,12 +39,12 @@ export const ShoppingCart = () => {
               quantity={product.quantity}
             />
           ))}
-        <Box
+        <Stack
+          direction="row"
+          justifyContent="flex-end"
           sx={{
             maxWidth: 500,
             mb: 4,
-            display: "flex",
-            justifyContent: "flex-end",
           }}
         >
           <Typography variant="button" component="p" sx={{ py: 2, mr: 2 }}>
@@ -55,8 +55,8 @@ export const ShoppingCart = () => {
               Submit
             </Button>
           )}
-        </Box>
-      </Box>
+        </Stack>
+      </Stack>
     </AsideWith>
   );
 };

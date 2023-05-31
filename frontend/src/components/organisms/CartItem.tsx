@@ -88,6 +88,7 @@ export const CartItem: FC<IProduct> = ({
             value={qty}
             onChange={onChange}
             ref={quantityInputRef}
+            sx={{ width: 90 }}
           />
           <IconButton aria-label="delete" sx={{ ml: 2 }} onClick={onDelete}>
             <DeleteOutline />
