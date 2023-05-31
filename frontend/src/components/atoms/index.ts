@@ -22,6 +22,7 @@ export {
   Fade,
   Backdrop,
   IconButton,
+  Badge,
 } from "@mui/material";
 
 export {

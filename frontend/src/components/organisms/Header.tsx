@@ -4,7 +4,7 @@ import { Paper, Container } from "../atoms";
 
 export const Header = () => {
   return (
-    <Paper square component={"header"} sx={{ padding: "10px 0" }}>
+    <Paper square component={"header"} sx={{ py: 2 }}>
       <Container maxWidth="xl">
         <Nav />
       </Container>
