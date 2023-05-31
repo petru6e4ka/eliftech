@@ -1,4 +1,11 @@
-import { useCallback, FC, useMemo, useState, ChangeEventHandler } from "react";
+import {
+  useCallback,
+  FC,
+  useMemo,
+  useState,
+  ChangeEventHandler,
+  useRef,
+} from "react";
 import {
   Card,
   CardMedia,
@@ -10,7 +17,7 @@ import {
   IconButton,
   DeleteOutline,
 } from "../atoms";
-import { useActions } from "../../hooks";
+import { useActions, useClickOutside } from "../../hooks";
 import { IProduct } from "../../constants/types";
 
 export const CartItem: FC<IProduct> = ({
@@ -43,6 +50,14 @@ export const CartItem: FC<IProduct> = ({
     deleteProductFromOrder(title);
   }, [deleteProductFromOrder, title]);
 
+  const onOutsideClick = useCallback(() => {
+    setQty(_quantity);
+  }, [_quantity]);
+
+  const quantityInputRef = useRef(null);
+
+  useClickOutside(quantityInputRef, onOutsideClick);
+
   return (
     <Card
       sx={{ maxWidth: 500, display: "flex", mb: 2, py: 3, pr: 2 }}
@@ -72,6 +87,7 @@ export const CartItem: FC<IProduct> = ({
             }}
             value={qty}
             onChange={onChange}
+            ref={quantityInputRef}
           />
           <IconButton aria-label="delete" sx={{ ml: 2 }} onClick={onDelete}>
             <DeleteOutline />
