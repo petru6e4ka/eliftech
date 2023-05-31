@@ -30,8 +30,9 @@ export const CartItem: FC<IProduct> = ({
       const { value } = e.target as HTMLInputElement;
       const number = Number(value);
 
+      setQty(number);
+
       if (number > 0) {
-        setQty(number);
         changeQantityInOrder({ title, quantity: number });
       }
     },
