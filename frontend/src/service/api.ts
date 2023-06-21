@@ -1,4 +1,4 @@
-import { API_URL } from "../constants/env";
+import { REACT_APP_API_URL } from "../constants/env";
 
 type TMethod = "POST" | "GET";
 export interface IError {
@@ -9,7 +9,7 @@ export interface IError {
 
 const _fetch = async <B>({
   url = "",
-  baseUrl = API_URL,
+  baseUrl = REACT_APP_API_URL,
   body,
   headers = {},
   method = "GET",
