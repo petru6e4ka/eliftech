@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Typography, Button, Box } from "../atoms";
+import { Typography, Button, Stack } from "../atoms";
 
 export const ProcessOrderModalContent: FC<Props> = ({
   onRemove,
@@ -7,11 +7,9 @@ export const ProcessOrderModalContent: FC<Props> = ({
 }) => {
   return (
     <>
-      <Box
+      <Stack
+        justifyContent="center"
         sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
           textAlign: "center",
         }}
       >
@@ -20,15 +18,15 @@ export const ProcessOrderModalContent: FC<Props> = ({
           want to process it?
         </Typography>
 
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <Stack justifyContent="center" direction="row">
           <Button variant="outlined" onClick={onRemove} sx={{ mx: 2 }}>
             Remove
           </Button>
           <Button variant="contained" onClick={onProceed} sx={{ mx: 2 }}>
             Proceed
           </Button>
-        </Box>
-      </Box>
+        </Stack>
+      </Stack>
     </>
   );
 };

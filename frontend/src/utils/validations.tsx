@@ -10,5 +10,3 @@ export const userPhoneSchema = string().matches(
   phoneRegExp,
   "Phone number is not valid"
 );
-
-export const userAdressSchema = string().required().min(3);

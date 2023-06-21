@@ -16,7 +16,7 @@ export const createOrder = createAsyncThunk<
     };
 
     const data = await (service as TService).order.postOrder({
-      user: state.user,
+      user: { ...state.user, adress: state.user.adress.description },
       products: state.order.products,
       shop_id: state.order.shop_id,
     });

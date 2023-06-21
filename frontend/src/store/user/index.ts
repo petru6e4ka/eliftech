@@ -6,7 +6,11 @@ const initialState: IUser = {
   name: "",
   email: "",
   phone: "",
-  adress: "",
+  adress: {
+    description: "",
+    lat: null,
+    lng: null,
+  },
 };
 
 const userSlice = createSlice({
@@ -35,4 +39,5 @@ const userSlice = createSlice({
 export const { setUserName, setUserEmail, setUserPhone, setUserAdress } =
   userSlice.actions;
 export const userReducer = userSlice.reducer;
-export const useUserSelector = () => useSelector((state: {user: IUser}) => state.user);
+export const useUserSelector = () =>
+  useSelector((state: { user: IUser }) => state.user);

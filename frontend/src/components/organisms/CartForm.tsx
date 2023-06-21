@@ -4,16 +4,16 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import { Box, TextField } from "../atoms";
+import { Stack, TextField } from "../atoms";
 import { useUserSelector } from "../../store/user";
 import {
   userNameSchema,
   userEmailSchema,
-  userAdressSchema,
   userPhoneSchema,
 } from "../../utils/validations";
 import { useActions } from "../../hooks";
-import { IUser } from "@/constants/types";
+import { IUser, IAdress } from "@/constants/types";
+import Adress from "../../features/adress";
 
 export const CartForm = () => {
   const user: IUser = useUserSelector();
@@ -27,8 +27,6 @@ export const CartForm = () => {
   const [emailError, setEmailError] = useState("");
   const [phone, setPhone] = useState(_user.phone);
   const [phoneError, setPhoneError] = useState("");
-  const [adress, setAdress] = useState(_user.adress);
-  const [adressError, setAdressError] = useState("");
 
   const onNameValidate = useCallback(
     async (name: string) => {
@@ -99,36 +97,18 @@ export const CartForm = () => {
     [onPhoneValidate]
   );
 
-  const onAdressValidate = useCallback(
-    async (adress: string) => {
-      await userAdressSchema
-        .validate(adress)
-        .then(() => {
-          setAdressError("");
-          setUserAdress(adress);
-        })
-        .catch((error) => setAdressError(error));
+  const onAdressChange = useCallback(
+    (value: IAdress) => {
+      setUserAdress(value);
     },
     [setUserAdress]
   );
 
-  const onAdressChange: ChangeEventHandler = useCallback(
-    (e) => {
-      const { value } = e.target as HTMLInputElement;
-
-      setAdress(value);
-      onAdressValidate(value);
-    },
-    [onAdressValidate]
-  );
-
   return (
-    <Box
+    <Stack
       component="form"
       sx={{
         "& > :not(style)": { mb: 2 },
-        display: "flex",
-        flexDirection: "column",
       }}
     >
       <TextField
@@ -139,6 +119,7 @@ export const CartForm = () => {
         value={name}
         onChange={onNameChange}
         error={!!nameError}
+        autoComplete="off"
       />
       <TextField
         id="outlined-basic"
@@ -148,6 +129,7 @@ export const CartForm = () => {
         value={email}
         onChange={onEmailChange}
         error={!!emailError}
+        autoComplete="off"
       />
       <TextField
         id="outlined-basic"
@@ -157,17 +139,10 @@ export const CartForm = () => {
         value={phone}
         onChange={onPhoneChange}
         error={!!phoneError}
+        autoComplete="off"
       />
-      <TextField
-        id="outlined-basic"
-        label="Adress"
-        variant="outlined"
-        required
-        value={adress}
-        onChange={onAdressChange}
-        error={!!adressError}
-      />
-    </Box>
+      <Adress value={user.adress} onChange={onAdressChange} />
+    </Stack>
   );
 };
 

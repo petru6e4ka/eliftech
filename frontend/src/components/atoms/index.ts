@@ -22,6 +22,9 @@ export {
   Fade,
   Backdrop,
   IconButton,
+  Badge,
+  Stack,
+  Autocomplete as UIAutocomplete,
 } from "@mui/material";
 
 export {
@@ -29,4 +32,5 @@ export {
   LocalPizzaOutlined,
   LunchDiningOutlined,
   DeleteOutline,
+  TravelExploreOutlined,
 } from "@mui/icons-material";
