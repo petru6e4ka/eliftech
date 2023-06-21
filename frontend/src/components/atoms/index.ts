@@ -24,6 +24,7 @@ export {
   IconButton,
   Badge,
   Stack,
+  Autocomplete as UIAutocomplete,
 } from "@mui/material";
 
 export {

@@ -1,8 +1,14 @@
+export interface IAdress {
+  description: string;
+  lat: number | null;
+  lng: number | null;
+}
+
 export interface IUser {
   name: string;
   email: string;
   phone: string;
-  adress: string;
+  adress: IAdress;
 }
 
 export interface IShop {
@@ -19,7 +25,12 @@ export interface IProduct {
 }
 
 export interface IOrder {
-  user: IUser;
+  user: {
+    name: string;
+    email: string;
+    phone: string;
+    adress: string;
+  };
   products: IProduct[];
   shop_id: string;
 }

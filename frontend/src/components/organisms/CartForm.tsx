@@ -12,8 +12,8 @@ import {
   userPhoneSchema,
 } from "../../utils/validations";
 import { useActions } from "../../hooks";
-import { IUser } from "@/constants/types";
-import { Adress } from "../../features/adress";
+import { IUser, IAdress } from "@/constants/types";
+import Adress from "../../features/adress";
 
 export const CartForm = () => {
   const user: IUser = useUserSelector();
@@ -98,7 +98,7 @@ export const CartForm = () => {
   );
 
   const onAdressChange = useCallback(
-    (value: string) => {
+    (value: IAdress) => {
       setUserAdress(value);
     },
     [setUserAdress]
