@@ -2,7 +2,7 @@ import React, { useCallback, useMemo, useRef, FC } from "react";
 import Geocode from "react-geocode";
 import { useLoadScript } from "@react-google-maps/api";
 import { CircularProgress, Typography } from "../../components/atoms";
-import { GOOGLE_MAPS_API_KEY } from "../../constants/env";
+import { REACT_APP_GOOGLE_MAPS_API_KEY } from "../../constants/env";
 import { IAdress } from "../../constants/types";
 import { Autocomplete } from "./autocomplete";
 import { Map } from "./map";
@@ -110,11 +110,11 @@ function withMap<T extends object>(Component: FC<T>) {
   Geocode.setLanguage("en");
   Geocode.setRegion("ukraine");
   Geocode.setLocationType("ROOFTOP");
-  Geocode.setApiKey(GOOGLE_MAPS_API_KEY);
+  Geocode.setApiKey(REACT_APP_GOOGLE_MAPS_API_KEY);
 
   const WrappedComponent = (props: T) => {
     const { isLoaded, loadError } = useLoadScript({
-      googleMapsApiKey: GOOGLE_MAPS_API_KEY,
+      googleMapsApiKey: REACT_APP_GOOGLE_MAPS_API_KEY,
       libraries,
     });
 
