@@ -29,7 +29,7 @@ export const ProductList = () => {
         shop_id &&
         entities.length > 0 &&
         entities.map(({ price, title, imageUrl }: IProduct) => (
-          <Grid item xs={12} md={4} lg={3} xl={2} key={title}>
+          <Grid item xs={12} md={6} lg={4} xl={3} key={title}>
             <ProductCard title={title} price={price} imageUrl={imageUrl} />
           </Grid>
         ))}
