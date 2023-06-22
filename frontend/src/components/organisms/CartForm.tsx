@@ -3,6 +3,7 @@ import React, {
   useCallback,
   useMemo,
   useState,
+  useRef,
 } from "react";
 import { Stack, TextField } from "../atoms";
 import { useUserSelector } from "../../store/user";
@@ -11,7 +12,7 @@ import {
   userEmailSchema,
   userPhoneSchema,
 } from "../../utils/validations";
-import { useActions } from "../../hooks";
+import { useActions, useClickOutside } from "../../hooks";
 import { IUser, IAdress } from "@/constants/types";
 import Adress from "../../features/adress";
 
@@ -104,6 +105,29 @@ export const CartForm = () => {
     [setUserAdress]
   );
 
+  const onNameOutsideClick = useCallback(() => {
+    setName(_user.name);
+    setNameError("");
+  }, [_user]);
+
+  const onEmailOutsideClick = useCallback(() => {
+    setEmail(_user.email);
+    setEmailError("");
+  }, [_user]);
+
+  const onPhoneOutsideClick = useCallback(() => {
+    setPhone(_user.phone);
+    setPhoneError("");
+  }, [_user]);
+
+  const nameInputRef = useRef(null);
+  const emailInputRef = useRef(null);
+  const phoneInputRef = useRef(null);
+
+  useClickOutside(nameInputRef, onNameOutsideClick);
+  useClickOutside(emailInputRef, onEmailOutsideClick);
+  useClickOutside(phoneInputRef, onPhoneOutsideClick);
+
   return (
     <Stack
       component="form"
@@ -120,6 +144,7 @@ export const CartForm = () => {
         onChange={onNameChange}
         error={!!nameError}
         autoComplete="off"
+        ref={nameInputRef}
       />
       <TextField
         id="outlined-basic"
@@ -130,6 +155,7 @@ export const CartForm = () => {
         onChange={onEmailChange}
         error={!!emailError}
         autoComplete="off"
+        ref={emailInputRef}
       />
       <TextField
         id="outlined-basic"
@@ -140,6 +166,7 @@ export const CartForm = () => {
         onChange={onPhoneChange}
         error={!!phoneError}
         autoComplete="off"
+        ref={phoneInputRef}
       />
       <Adress value={user.adress} onChange={onAdressChange} />
     </Stack>
