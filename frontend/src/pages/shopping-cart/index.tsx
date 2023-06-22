@@ -50,8 +50,8 @@ export const ShoppingCart = () => {
           <Typography variant="button" component="p" sx={{ py: 2, mr: 2 }}>
             {products.length > 0 && `Total Price: ${totalPrice} UAH`}
           </Typography>
-          {isValid && (
-            <Button variant="contained" onClick={onSubmit}>
+          {products.length > 0 && (
+            <Button variant="contained" onClick={onSubmit} disabled={!isValid}>
               Submit
             </Button>
           )}
