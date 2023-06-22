@@ -31,13 +31,18 @@ const _fetch = async <B>({
     method,
   });
 
-  if (response.ok) {
-    const data = await response.json();
+  const data = await response.json();
 
+  if (response.ok) {
     return data;
   }
 
-  return { error: true, status: response.status, text: response.statusText };
+  return {
+    error: true,
+    status: response.status,
+    text: response.statusText,
+    errors: data!.errors,
+  };
 };
 
 const get = (url: string) => _fetch({ url });

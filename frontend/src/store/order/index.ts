@@ -21,6 +21,10 @@ export const createOrder = createAsyncThunk<
       shop_id: state.order.shop_id,
     });
 
+    if (data.error) {
+      return rejectWithValue(`${data.errors[0].value} ${data.errors[0].msg}`);
+    }
+
     return data as unknown as IOrder;
   } catch (err) {
     return rejectWithValue("Something went wrong, please, try later");
